@@ -1,0 +1,19 @@
+body {
+    font-family: 'Monserrat';
+    color: gold;
+}
+
+#container {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lato';
+}
+
+#animal-img {
+    border: 10px solid gold;
+    border-radius: 10px;
+}
