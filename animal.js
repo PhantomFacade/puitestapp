@@ -1,33 +1,32 @@
 function Sheep(name, age) {
     this.name = name;
     this.age = age;
-    this.image_alt = “A description of my animal”;
-    this.image = sheep.png”;
+    this.image_alt = “sheep”;
+    this.image = sheep.jpg”;
 }
 
 function Cat(name, age) {
     this.name = name;
     this.age = age;
-    this.image_alt = “A description of my animal”;
+    this.image_alt = “cat”;
     this.image = “cat.jpg”;
 }
 
 function Shark(name, age) {
     this.name = name;
     this.age = age;
-    this.image_alt = “A description of my animal”;
+    this.image_alt = “shark”;
     this.image = “shark.jpg”;
 }
 
 let animals = [new Cat(), new Sheep(), new Shark()];
 let names = ["Momo", "Cola", "Pizza", "Emmi", "Buck", "Sun", "Barry", "Apples"];
 
-// get a random index for an array from 0 to maxIndex (not inclusive)
+
 function getRandomIndex(maxIndex) {
     return Math.floor(Math.random() * maxIndex);
 }
 
-// generates object with a random name and random age
 function generateRandomAnimal() {
     let randomIdx = getRandomIndex(animals.length);
     let randomAnimal = animals[randomIdx];
