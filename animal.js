@@ -1,22 +1,22 @@
 function Sheep(name, age) {
     this.name = name;
     this.age = age;
-    this.image_alt = “sheep”;
-    this.image = sheep.jpg”;
+    this.image_alt = 'sheep';
+    this.image = 'sheep.jpg';
 }
 
 function Cat(name, age) {
     this.name = name;
     this.age = age;
-    this.image_alt = “cat”;
-    this.image = “cat.jpg”;
+    this.image_alt = 'cat';
+    this.image = 'cat.jpg';
 }
 
 function Shark(name, age) {
     this.name = name;
     this.age = age;
-    this.image_alt = “shark”;
-    this.image = “shark.jpg”;
+    this.image_alt = 'shark';
+    this.image = 'shark.jpg';
 }
 
 let animals = [new Cat(), new Sheep(), new Shark()];
@@ -52,13 +52,12 @@ function generateRandomAge() {
 }
 
 function onLoad() {
-
     let animal = generateRandomAnimal();
     console.log(animal)
         // update the page based on the animal properties
-    document.getElementById("animal-properties").textContent = animal.name + "  " + animal.age + "years old";
-    let imageTag = document.getElementById("animal-img");
-    imageTag.setAttribute("src", animal.image);
-    imageTag.setAttribute("alt", animal.image_alt);
+    document.getElementById('animal-properties').textContent = animal.name + "  " + animal.age + "years old";
+    let imageTag = document.getElementById('animal-img');
+    imageTag.setAttribute('src', animal.image);
+    imageTag.setAttribute('alt', animal.image_alt);
 
 }
